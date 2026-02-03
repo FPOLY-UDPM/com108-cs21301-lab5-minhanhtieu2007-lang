@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: Tiêu Anh Minh
+ * MSSV:      PS48358
+ * Lớp:       CS21301
  *****************************************************************************/
 
 //  BÀI 3: XÂY DỰNG HÀM HOÁN VỊ 
@@ -12,12 +12,18 @@
 
 #include <stdio.h>
 
-//Tạo hàm 
+void doicho (int *a, int *b){
+    int x = *a;
+    *a=*b;
+    *b = x;
+}
 
 int main() {
-
+int a= 11, b=12;
     // //Gọi hàm trong hàm main 
-    
+    doicho (&a,&b);
+    printf (" a= %d, b= %d\n",a,b);
+
     return 0;
 }
 
